@@ -1,0 +1,64 @@
+/* universal css rules */
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body rules */
+/* cosider it as the main flex container , containing all the divs */
+body{
+    height: auto;
+    display : flex;
+    /* position of the flexbox items */
+    /*defines how the flexbox items are alinged according to the main axis */
+    justify-content: center;
+    flex-direction: column;
+    /*defines how the flexbox items are alinged accroding to the cross axis */
+    align-items: center;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    font-family: 'Times New Roman';
+    color: aliceblue;
+}
+
+
+/* a child of the first flex container ( the body ) and this itself is a flex container */
+.location,.temperature{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 50%
+}
+
+
+.temperature{
+
+    flex-direction: column;
+}
+
+
+/* editing the style of the contianer as a whole */
+.degree{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* cursor style when hovering over an element */
+    cursor: pointer;
+}
+
+  
+/* accessing elements inside the degree section (div) */
+
+.degree span{
+
+    margin : 10px;
+    font-size: 20px;
+}
+
+.degree h2{
+   
+    font-size: 30px;
+}
