@@ -1,5 +1,5 @@
 # Weather-App
-A weather app build using Javascript and the DarkSky API
+A weather app built using Javascript and the DarkSky API
 
 DarkSky Api  : https://darksky.net/dev
 
